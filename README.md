@@ -1,7 +1,8 @@
 filecache php 文件缓存类
 =========
 
-#####支持key=>value 支持片段缓存
+* 支持key=>value
+* 支持片段缓存
 ##使用方法
 
 ```php
@@ -23,14 +24,13 @@ if($cache->startCache('html', 3600)) // key, expired
 
 ##配置
 ```php
+
+
 /**
 * @param string $path 缓存文件存放路径
 * @param int $max_path 缓存的最大目录数
 * @param int $max_file 缓存最大文件数
 * @param int $gc_probality 执行set时遍历缓存以删除过期缓存数据操作的执行概率 百万分之 *
 */
-public function __construct($path = "cache", $max_path = 100, $max_file = 50000, $gc_probality = 100)
-{
-  ...
-}
+$cache = new FileCache($path = "cache", $max_path = 100, $max_file = 50000, $gc_probality = 100);
 ```
