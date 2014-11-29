@@ -3,6 +3,7 @@ filecache php 文件缓存类
 
 * 支持key=>value
 * 支持片段缓存
+
 ##使用方法
 
 ```php
