@@ -18,7 +18,7 @@ $cache->delete('test');
 //片段缓存
 if($cache->startCache('html', 3600)) // key, expired
 {
-  缓存内容…… 任意输出
+  //缓存内容…… 任意输出
   
   $cache->endCache();
 }
