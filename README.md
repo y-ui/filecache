@@ -4,7 +4,7 @@ filecache php 文件缓存类
 * 支持key=>value
 * 支持片段缓存
 
-##使用方法
+## 使用方法
 
 ```php
 include 'filecache.php';
@@ -24,7 +24,7 @@ if($cache->startCache('html', 3600)) // key, expired
 }
 ```
 
-##配置
+## 配置
 ```php
 
 
